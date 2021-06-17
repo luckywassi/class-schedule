@@ -50,3 +50,8 @@ input {
 .content-header h4 {
 	color: grey;
 }
+button {
+	padding: 5px 10px;
+	font-size: 40px;
+	cursor: pointer;
+}

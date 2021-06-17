@@ -1,13 +1,17 @@
 import React from 'react';
 
 function Cart(props) {
-	console.log(props);
+	let { cartItems, setShowCart } = props.data;
+
+	const handleClick = () => {
+		setShowCart(true);
+	};
 	return (
 		<div>
-			<span style={{ fontSize: '40px' }}>
+			<button onClick={handleClick}>
 				<i className='fas fa-cart-plus'></i>
-				{props.data}
-			</span>
+				{cartItems.total}
+			</button>
 		</div>
 	);
 }

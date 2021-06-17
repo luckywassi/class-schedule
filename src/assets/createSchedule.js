@@ -108,6 +108,5 @@ export const scheduleFor30Days = () => {
 	let week3 = createSchedule(date3);
 	let date4 = new Date(date3.getTime() + 7 * 24 * 60 * 60 * 1000);
 	let week4 = createSchedule(date4);
-	console.log({ week1, week2, week3, week4 });
 	return [week1, week2, week3, week4];
 };
