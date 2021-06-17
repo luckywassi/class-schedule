@@ -55,3 +55,8 @@ button {
 	font-size: 40px;
 	cursor: pointer;
 }
+.timer p {
+	color: brown;
+	font-weight: bolder;
+	font-size: large;
+}
