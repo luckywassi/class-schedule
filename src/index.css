@@ -25,7 +25,7 @@ code {
 	align-items: center;
 }
 .content {
-	background: linear-gradient(to right, rgba(163, 149, 149, 0.027), rgba(146, 123, 123, 0.1));
+	background: linear-gradient(to right, rgba(163, 149, 149, 0.1), rgba(146, 123, 123, 0.1));
 	align-self: center;
 	font-size: 20px;
 }
@@ -40,15 +40,15 @@ input {
 }
 .content-header {
 	display: flex;
-	justify-content: center;
-	gap: 0 50px;
+	justify-content: space-between;
 	align-items: center;
 }
-.content-header h3 {
+.content-header h1 {
 	color: blue;
 }
-.content-header h4 {
+.content-header h3 {
 	color: grey;
+	font-size: 20px;
 }
 button {
 	padding: 5px 10px;

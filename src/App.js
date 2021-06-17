@@ -8,7 +8,7 @@ import CartContent from './Components/CartContent';
 function App() {
 	const freeSeats = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
 	//const scheduleArr = scheduleFor30Days();
-	const scheduleArr = scheduleForNWeeks(4);
+	const scheduleArr = scheduleForNWeeks(8);
 	const [available, setAvailable] = useState(data);
 	const [cartItems, setCartItems] = useState({ total: 0, items: [] });
 	const [showCart, setShowCart] = useState(false);
@@ -40,15 +40,14 @@ function App() {
 				<Timer />
 				<Cart data={{ cartItems, setShowCart }} />
 			</div>
-
-			<div className='content-header'>
-				<h3>Class Schedule</h3>
-				<h4>Free Seats Left: {freeSeats}</h4>
-			</div>
 			{showCart ? (
 				<CartContent cartData={{ cartItems, setShowCart, setCartItems, available, setAvailable }} />
 			) : (
 				<div className='content'>
+					<div className='content-header'>
+						<h1>Class Schedule</h1>
+						<h3>Free Seats Left: {freeSeats}</h3>
+					</div>
 					<table>
 						<tbody>
 							<tr>

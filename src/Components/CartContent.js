@@ -23,31 +23,40 @@ function CartContent(props) {
 	return (
 		<>
 			<div className='content'>
-				<table>
-					<tbody>
-						<tr>
-							<th>Subject</th>
-							<th>Date</th>
-							<th>Time</th>
-							<th>Availability</th>
-							<th>Action</th>
-						</tr>
-						{cartItems.items.map((item, index) => (
-							<tr key={index}>
-								<td>{item.subject}</td>
-								<td>{item.date}</td>
-								<td>{item.time}</td>
-								<td>{item.seats} seats available</td>
-								<td>
-									<input type='button' value='Cancel' onClick={e => handleClick(item)} />
-								</td>
+				<div className='content-header'>
+					<h1>Cart</h1>
+				</div>
+				<br />
+				{cartItems.total === 0 ? (
+					<h3>Cart is empty...!</h3>
+				) : (
+					<table>
+						<tbody>
+							<tr>
+								<th>Subject</th>
+								<th>Date</th>
+								<th>Time</th>
+								<th>Availability</th>
+								<th>Action</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
-			</div>
-			<div style={{ textAlign: 'center' }}>
-				<input type='button' value='Back' onClick={() => setShowCart(false)} />
+							{cartItems.items.map((item, index) => (
+								<tr key={index}>
+									<td>{item.subject}</td>
+									<td>{item.date}</td>
+									<td>{item.time}</td>
+									<td>{item.seats} seats available</td>
+									<td>
+										<input type='button' value='Cancel' onClick={e => handleClick(item)} />
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				)}
+				<br />
+				<div style={{ textAlign: 'center' }}>
+					<input type='button' value='Go Back' onClick={() => setShowCart(false)} />
+				</div>
 			</div>
 		</>
 	);
