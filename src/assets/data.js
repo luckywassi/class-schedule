@@ -1,50 +1,29 @@
-export const data = [
-	{
-		week: 1,
+export const data = {
+	week1: {
 		python: 5,
 		java: 6,
-		html: 8,
+		html1: 8,
+		html2: 9,
 	},
-	{
-		week: 2,
+
+	week2: {
 		python: 5,
 		java: 6,
-		html: 8,
+		html1: 8,
+		html2: 9,
 	},
-	{
-		week: 3,
+
+	week3: {
 		python: 5,
 		java: 6,
-		html: 8,
+		html1: 8,
+		html2: 9,
 	},
-	{
-		week: 4,
+
+	week4: {
 		python: 5,
 		java: 6,
-		html: 8,
+		html1: 8,
+		html2: 9,
 	},
-	{
-		week: 5,
-		python: 5,
-		java: 6,
-		html: 8,
-	},
-	{
-		week: 6,
-		python: 5,
-		java: 6,
-		html: 8,
-	},
-	{
-		week: 7,
-		python: 5,
-		java: 6,
-		html: 8,
-	},
-	{
-		week: 8,
-		python: 5,
-		java: 6,
-		html: 8,
-	},
-];
+};
