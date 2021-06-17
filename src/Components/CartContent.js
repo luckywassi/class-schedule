@@ -12,6 +12,7 @@ function CartContent(props) {
 			...availableSeats,
 			[item.subject]: seats,
 			[`booked${item.subject}`]: false,
+			bookedThisWeek: availableSeats.bookedThisWeek - 1,
 		};
 		setAvailable({
 			...available,

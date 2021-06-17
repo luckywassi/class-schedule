@@ -14,11 +14,11 @@ function App() {
 	const [showCart, setShowCart] = useState(false);
 
 	const handleClick = (e, index, sub, time) => {
-		if (cartItems.total >= 3) {
-			alert('You can only book max of 3 classes');
+		let availableSeats = available[`week${index + 1}`];
+		if (availableSeats.bookedThisWeek >= 3) {
+			alert('You can only book max of 3 classes per week');
 			return;
 		}
-		let availableSeats = available[`week${index + 1}`];
 		let seats = availableSeats[sub];
 		seats -= 1;
 		let cartItem = { subject: sub, time, date: scheduleArr[index][sub], week: `week${index + 1}`, seats };
@@ -27,6 +27,7 @@ function App() {
 			...availableSeats,
 			[sub]: seats,
 			[`booked${sub}`]: true,
+			bookedThisWeek: availableSeats.bookedThisWeek + 1,
 		};
 		setAvailable({
 			...available,
@@ -59,6 +60,13 @@ function App() {
 							</tr>
 							{scheduleArr.map((week, index) => (
 								<React.Fragment key={index}>
+									<tr className='week-row'>
+										<td>-----------</td>
+										<td>------------------</td>
+										<td>---Week {index + 1} from today---</td>
+										<td>------------------</td>
+										<td>------------</td>
+									</tr>
 									<tr>
 										<td>python</td>
 										<td>{week.python}</td>

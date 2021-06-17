@@ -2,12 +2,13 @@ export const data = {
 	week1: {
 		python: 3,
 		java: 6,
-		html1: 0,
+		html1: 1,
 		html2: 2,
 		bookedpython: false,
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 
 	week2: {
@@ -19,6 +20,7 @@ export const data = {
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 
 	week3: {
@@ -30,6 +32,7 @@ export const data = {
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 
 	week4: {
@@ -41,6 +44,7 @@ export const data = {
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 	week5: {
 		python: 3,
@@ -51,6 +55,7 @@ export const data = {
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 	week6: {
 		python: 3,
@@ -61,6 +66,7 @@ export const data = {
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 	week7: {
 		python: 0,
@@ -71,6 +77,7 @@ export const data = {
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 	week8: {
 		python: 5,
@@ -81,5 +88,6 @@ export const data = {
 		bookedjava: false,
 		bookedhtml1: false,
 		bookedhtml2: false,
+		bookedThisWeek: 0,
 	},
 };

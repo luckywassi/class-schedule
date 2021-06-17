@@ -84,3 +84,6 @@ button {
 	color: white;
 	letter-spacing: 2px;
 }
+.week-row td {
+	border: none;
+}
