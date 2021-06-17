@@ -34,6 +34,10 @@ th {
 	padding: 5px 10px;
 	border: 2px solid black;
 }
+input {
+	padding: 5px 10px;
+	cursor: pointer;
+}
 .content-header {
 	display: flex;
 	justify-content: center;

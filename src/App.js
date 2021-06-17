@@ -71,37 +71,42 @@ function App() {
 									<td>{week.java}</td>
 									<td>5pm</td>
 									<td>{available[`week${index + 1}`].java}</td>
-
-									<input
-										type='button'
-										disabled={available[`week${index + 1}`].java === 0 ? true : false}
-										value='Book'
-										onClick={e => handleClick(e, index, 'java')}
-									/>
+									<td>
+										<input
+											type='button'
+											disabled={available[`week${index + 1}`].java === 0 ? true : false}
+											value='Book'
+											onClick={e => handleClick(e, index, 'java')}
+										/>
+									</td>
 								</tr>
 								<tr>
 									<td>html class 1</td>
 									<td>{week.html1}</td>
 									<td>9pm</td>
 									<td>{available[`week${index + 1}`].html1}</td>
-									<input
-										disabled={available[`week${index + 1}`].html1 === 0 ? true : false}
-										type='button'
-										value='Book'
-										onClick={e => handleClick(e, index, 'html1')}
-									/>
+									<td>
+										<input
+											disabled={available[`week${index + 1}`].html1 === 0 ? true : false}
+											type='button'
+											value='Book'
+											onClick={e => handleClick(e, index, 'html1')}
+										/>
+									</td>
 								</tr>
 								<tr>
 									<td>html class 2</td>
 									<td>{week.html2}</td>
 									<td>9pm</td>
 									<td>{available[`week${index + 1}`].html2}</td>
-									<input
-										disabled={available[`week${index + 1}`].html2 === 0 ? true : false}
-										type='button'
-										value='Book'
-										onClick={e => handleClick(e, index, 'html2')}
-									/>
+									<td>
+										<input
+											disabled={available[`week${index + 1}`].html2 === 0 ? true : false}
+											type='button'
+											value='Book'
+											onClick={e => handleClick(e, index, 'html2')}
+										/>
+									</td>
 								</tr>
 							</>
 						))}
