@@ -68,7 +68,7 @@ function App() {
 										<td>
 											<input
 												type='button'
-												value='Book'
+												value={available[`week${index + 1}`].python === 0 ? '-Full-' : 'Book'}
 												disabled={
 													available[`week${index + 1}`].python === 0 || available[`week${index + 1}`].bookedpython
 														? true
@@ -91,7 +91,7 @@ function App() {
 														? true
 														: false
 												}
-												value='Book'
+												value={available[`week${index + 1}`].java === 0 ? '-Full-' : 'Book'}
 												onClick={e => handleClick(e, index, 'java', '5pm')}
 											/>
 										</td>
@@ -109,7 +109,7 @@ function App() {
 														: false
 												}
 												type='button'
-												value='Book'
+												value={available[`week${index + 1}`].html1 === 0 ? '-Full-' : 'Book'}
 												onClick={e => handleClick(e, index, 'html1', '9pm')}
 											/>
 										</td>
@@ -127,7 +127,7 @@ function App() {
 														: false
 												}
 												type='button'
-												value='Book'
+												value={available[`week${index + 1}`].html2 === 0 ? '-Full-' : 'Book'}
 												onClick={e => handleClick(e, index, 'html2', '9pm')}
 											/>
 										</td>
