@@ -37,6 +37,7 @@ th {
 input {
 	padding: 5px 10px;
 	cursor: pointer;
+	letter-spacing: 2px;
 }
 .content-header {
 	display: flex;
@@ -76,4 +77,10 @@ button {
 
 .cart-btn {
 	margin-right: 15px;
+}
+.full {
+	background: orange;
+	font-weight: bolder;
+	color: white;
+	letter-spacing: 2px;
 }

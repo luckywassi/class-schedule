@@ -2,8 +2,6 @@ import React from 'react';
 
 function CartContent(props) {
 	const { cartItems, setShowCart, setCartItems, available, setAvailable } = props.cartData;
-	console.log(cartItems);
-
 	const handleClick = item => {
 		let restItems = cartItems.items.filter(eachItem => !(eachItem.subject === item.subject && eachItem.week === item.week));
 		setCartItems({ items: restItems, total: cartItems.total - 1 });

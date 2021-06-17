@@ -118,6 +118,5 @@ export const scheduleForNWeeks = totalWeeks => {
 		finalSchedule = [...finalSchedule, week];
 		date = new Date(date.getTime() + 7 * 24 * 60 * 60 * 1000);
 	}
-	console.log(finalSchedule);
 	return finalSchedule;
 };

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Cart from './Components/Cart';
 import Timer from './Components/Timer';
-import { scheduleFor30Days, scheduleForNWeeks } from './assets/createSchedule';
+import { scheduleForNWeeks } from './assets/createSchedule';
 import { data } from './assets/data';
 import CartContent from './Components/CartContent';
 
@@ -67,6 +67,7 @@ function App() {
 										<td>
 											<input
 												type='button'
+												className={available[`week${index + 1}`].python === 0 ? 'full' : ''}
 												value={available[`week${index + 1}`].python === 0 ? '-Full-' : 'Book'}
 												disabled={
 													available[`week${index + 1}`].python === 0 || available[`week${index + 1}`].bookedpython
@@ -85,6 +86,7 @@ function App() {
 										<td>
 											<input
 												type='button'
+												className={available[`week${index + 1}`].java === 0 ? 'full' : ''}
 												disabled={
 													available[`week${index + 1}`].java === 0 || available[`week${index + 1}`].bookedjava
 														? true
@@ -102,6 +104,7 @@ function App() {
 										<td>{available[`week${index + 1}`].html1} seats available</td>
 										<td>
 											<input
+												className={available[`week${index + 1}`].html1 === 0 ? 'full' : ''}
 												disabled={
 													available[`week${index + 1}`].html1 === 0 || available[`week${index + 1}`].bookedhtml1
 														? true
@@ -120,6 +123,7 @@ function App() {
 										<td>{available[`week${index + 1}`].html2} seats available</td>
 										<td>
 											<input
+												className={available[`week${index + 1}`].html2 === 0 ? 'full' : ''}
 												disabled={
 													available[`week${index + 1}`].html2 === 0 || available[`week${index + 1}`].bookedhtml2
 														? true
