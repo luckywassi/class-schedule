@@ -60,3 +60,20 @@ button {
 	font-weight: bolder;
 	font-size: large;
 }
+.cart-wrapper {
+	position: relative;
+}
+.cart-batch {
+	position: absolute;
+	font-size: small;
+	font-weight: bolder;
+	right: 8px;
+	color: black;
+	background: red;
+	padding: 5px;
+	border-radius: 100px;
+}
+
+.cart-btn {
+	margin-right: 15px;
+}
