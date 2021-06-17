@@ -67,7 +67,7 @@ function App() {
 									</td>
 								</tr>
 								<tr>
-									<td>python</td>
+									<td>java</td>
 									<td>{week.java}</td>
 									<td>5pm</td>
 									<td>{available[`week${index + 1}`].java}</td>

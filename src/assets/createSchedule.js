@@ -1,15 +1,13 @@
 export const createSchedule = todayDate => {
 	let scheduleObject = {};
 	if (todayDate.getDay() === 0) {
-		let wed = new Date();
-		wed.setDate(todayDate.getDate() + 3);
-		let fri = new Date();
-		fri.setDate(todayDate.getDate() + 5);
-		let sat = new Date();
-		sat.setDate(todayDate.getDate() + 6);
+		let mon = new Date(todayDate.getTime() + 1 * 24 * 60 * 60 * 1000);
+		let wed = new Date(todayDate.getTime() + 3 * 24 * 60 * 60 * 1000);
+		let fri = new Date(todayDate.getTime() + 5 * 24 * 60 * 60 * 1000);
+		let sat = new Date(todayDate.getTime() + 6 * 24 * 60 * 60 * 1000);
 		scheduleObject = {
 			...scheduleObject,
-			python: todayDate.toDateString(),
+			python: mon.toDateString(),
 			java: wed.toDateString(),
 			html1: fri.toDateString(),
 			html2: sat.toDateString(),
@@ -17,15 +15,13 @@ export const createSchedule = todayDate => {
 		return scheduleObject;
 	}
 	if (todayDate.getDay() === 1) {
-		let wed = new Date();
-		wed.setDate(todayDate.getDate() + 2);
-		let fri = new Date();
-		fri.setDate(todayDate.getDate() + 4);
-		let sat = new Date();
-		sat.setDate(todayDate.getDate() + 5);
+		let mon = new Date(todayDate.getTime() + 0 * 24 * 60 * 60 * 1000);
+		let wed = new Date(todayDate.getTime() + 2 * 24 * 60 * 60 * 1000);
+		let fri = new Date(todayDate.getTime() + 4 * 24 * 60 * 60 * 1000);
+		let sat = new Date(todayDate.getTime() + 5 * 24 * 60 * 60 * 1000);
 		scheduleObject = {
 			...scheduleObject,
-			python: todayDate.toDateString(),
+			python: mon.toDateString(),
 			java: wed.toDateString(),
 			html1: fri.toDateString(),
 			html2: sat.toDateString(),
@@ -33,15 +29,13 @@ export const createSchedule = todayDate => {
 		return scheduleObject;
 	}
 	if (todayDate.getDay() === 2) {
-		let wed = new Date();
-		wed.setDate(todayDate.getDate() + 1);
-		let fri = new Date();
-		fri.setDate(todayDate.getDate() + 3);
-		let sat = new Date();
-		sat.setDate(todayDate.getDate() + 4);
+		let mon = new Date(todayDate.getTime() + 6 * 24 * 60 * 60 * 1000);
+		let wed = new Date(todayDate.getTime() + 1 * 24 * 60 * 60 * 1000);
+		let fri = new Date(todayDate.getTime() + 3 * 24 * 60 * 60 * 1000);
+		let sat = new Date(todayDate.getTime() + 4 * 24 * 60 * 60 * 1000);
 		scheduleObject = {
 			...scheduleObject,
-			python: todayDate.toDateString(),
+			python: mon.toDateString(),
 			java: wed.toDateString(),
 			html1: fri.toDateString(),
 			html2: sat.toDateString(),
@@ -49,15 +43,13 @@ export const createSchedule = todayDate => {
 		return scheduleObject;
 	}
 	if (todayDate.getDay() === 3) {
-		let wed = new Date();
-		wed.setDate(todayDate.getDate() + 0);
-		let fri = new Date();
-		fri.setDate(todayDate.getDate() + 2);
-		let sat = new Date();
-		sat.setDate(todayDate.getDate() + 3);
+		let mon = new Date(todayDate.getTime() + 5 * 24 * 60 * 60 * 1000);
+		let wed = new Date(todayDate.getTime() + 0 * 24 * 60 * 60 * 1000);
+		let fri = new Date(todayDate.getTime() + 2 * 24 * 60 * 60 * 1000);
+		let sat = new Date(todayDate.getTime() + 3 * 24 * 60 * 60 * 1000);
 		scheduleObject = {
 			...scheduleObject,
-			python: todayDate.toDateString(),
+			python: mon.toDateString(),
 			java: wed.toDateString(),
 			html1: fri.toDateString(),
 			html2: sat.toDateString(),
@@ -65,15 +57,13 @@ export const createSchedule = todayDate => {
 		return scheduleObject;
 	}
 	if (todayDate.getDay() === 4) {
-		let wed = new Date();
-		wed.setDate(todayDate.getDate() + 6);
-		let fri = new Date();
-		fri.setDate(todayDate.getDate() + 1);
-		let sat = new Date();
-		sat.setDate(todayDate.getDate() + 2);
+		let mon = new Date(todayDate.getTime() + 4 * 24 * 60 * 60 * 1000);
+		let wed = new Date(todayDate.getTime() + 6 * 24 * 60 * 60 * 1000);
+		let fri = new Date(todayDate.getTime() + 1 * 24 * 60 * 60 * 1000);
+		let sat = new Date(todayDate.getTime() + 2 * 24 * 60 * 60 * 1000);
 		scheduleObject = {
 			...scheduleObject,
-			python: todayDate.toDateString(),
+			python: mon.toDateString(),
 			java: wed.toDateString(),
 			html1: fri.toDateString(),
 			html2: sat.toDateString(),
@@ -81,15 +71,13 @@ export const createSchedule = todayDate => {
 		return scheduleObject;
 	}
 	if (todayDate.getDay() === 5) {
-		const wed = new Date();
-		wed.setDate(todayDate.getDate() + 5);
-		const fri = new Date();
-		fri.setDate(todayDate.getDate() + 0);
-		const sat = new Date();
-		sat.setDate(todayDate.getDate() + 1);
+		let mon = new Date(todayDate.getTime() + 3 * 24 * 60 * 60 * 1000);
+		const wed = new Date(todayDate.getTime() + 5 * 24 * 60 * 60 * 1000);
+		const fri = new Date(todayDate.getTime() + 0 * 24 * 60 * 60 * 1000);
+		const sat = new Date(todayDate.getTime() + 1 * 24 * 60 * 60 * 1000);
 		scheduleObject = {
 			...scheduleObject,
-			python: todayDate.toDateString(),
+			python: mon.toDateString(),
 			java: wed.toDateString(),
 			html1: fri.toDateString(),
 			html2: sat.toDateString(),
@@ -97,15 +85,13 @@ export const createSchedule = todayDate => {
 		return scheduleObject;
 	}
 	if (todayDate.getDay() === 6) {
-		let wed = new Date();
-		wed.setDate(todayDate.getDate() + 4);
-		let fri = new Date();
-		fri.setDate(todayDate.getDate() + 6);
-		let sat = new Date();
-		sat.setDate(todayDate.getDate() + 0);
+		let mon = new Date(todayDate.getTime() + 2 * 24 * 60 * 60 * 1000);
+		let wed = new Date(todayDate.getTime() + 4 * 24 * 60 * 60 * 1000);
+		let fri = new Date(todayDate.getTime() + 6 * 24 * 60 * 60 * 1000);
+		let sat = new Date(todayDate.getTime() + 0 * 24 * 60 * 60 * 1000);
 		scheduleObject = {
 			...scheduleObject,
-			python: todayDate.toDateString(),
+			python: mon.toDateString(),
 			java: wed.toDateString(),
 			html1: fri.toDateString(),
 			html2: sat.toDateString(),
@@ -116,14 +102,12 @@ export const createSchedule = todayDate => {
 export const scheduleFor30Days = () => {
 	let date1 = new Date();
 	let week1 = createSchedule(date1);
-	let date2 = new Date();
-	date2.setDate(date1.getDate() + 7);
+	let date2 = new Date(date1.getTime() + 7 * 24 * 60 * 60 * 1000);
 	let week2 = createSchedule(date2);
-	let date3 = new Date();
-	date3.setDate(date2.getDate() + 7);
+	let date3 = new Date(date2.getTime() + 7 * 24 * 60 * 60 * 1000);
 	let week3 = createSchedule(date3);
-	let date4 = new Date();
-	date4.setDate(date3.getDate() + 7);
+	let date4 = new Date(date3.getTime() + 7 * 24 * 60 * 60 * 1000);
 	let week4 = createSchedule(date4);
+	console.log({ week1, week2, week3, week4 });
 	return [week1, week2, week3, week4];
 };
