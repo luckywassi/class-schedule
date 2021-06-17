@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Cart from './Components/Cart';
 import Timer from './Components/Timer';
 import { scheduleFor30Days } from './assets/createSchedule';
@@ -51,7 +51,7 @@ function App() {
 							<th>Action</th>
 						</tr>
 						{scheduleArr.map((week, index) => (
-							<>
+							<React.Fragment key={index}>
 								<tr>
 									<td>python</td>
 									<td>{week.python}</td>
@@ -108,7 +108,7 @@ function App() {
 										/>
 									</td>
 								</tr>
-							</>
+							</React.Fragment>
 						))}
 					</tbody>
 				</table>
