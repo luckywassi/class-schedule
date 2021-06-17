@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Cart from './Components/Cart';
 import Timer from './Components/Timer';
-import { scheduleFor30Days } from './assets/createSchedule';
+import { scheduleFor30Days, scheduleForNWeeks } from './assets/createSchedule';
 import { data } from './assets/data';
 import CartContent from './Components/CartContent';
 
 function App() {
-	const [freeSeats, setFreeSeats] = useState(Math.floor(Math.random() * (15 - 5 + 1)) + 5);
-	const scheduleArr = scheduleFor30Days();
+	const freeSeats = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+	//const scheduleArr = scheduleFor30Days();
+	const scheduleArr = scheduleForNWeeks(4);
 	const [available, setAvailable] = useState(data);
 	const [cartItems, setCartItems] = useState({ total: 0, items: [] });
 	const [showCart, setShowCart] = useState(false);
