@@ -56,7 +56,7 @@ function App() {
 									<td>python</td>
 									<td>{week.python}</td>
 									<td>4pm</td>
-									<td>{available[`week${index + 1}`].python}</td>
+									<td>{available[`week${index + 1}`].python} seats available</td>
 									<td>
 										<input
 											type='button'
@@ -70,7 +70,7 @@ function App() {
 									<td>java</td>
 									<td>{week.java}</td>
 									<td>5pm</td>
-									<td>{available[`week${index + 1}`].java}</td>
+									<td>{available[`week${index + 1}`].java} seats available</td>
 									<td>
 										<input
 											type='button'
@@ -84,7 +84,7 @@ function App() {
 									<td>html class 1</td>
 									<td>{week.html1}</td>
 									<td>9pm</td>
-									<td>{available[`week${index + 1}`].html1}</td>
+									<td>{available[`week${index + 1}`].html1} seats available</td>
 									<td>
 										<input
 											disabled={available[`week${index + 1}`].html1 === 0 ? true : false}
@@ -98,7 +98,7 @@ function App() {
 									<td>html class 2</td>
 									<td>{week.html2}</td>
 									<td>9pm</td>
-									<td>{available[`week${index + 1}`].html2}</td>
+									<td>{available[`week${index + 1}`].html2} seats available</td>
 									<td>
 										<input
 											disabled={available[`week${index + 1}`].html2 === 0 ? true : false}
